@@ -4,13 +4,14 @@
 
 文件说明：
 1. /EGG_data_trans/myread.m：BCICIV_2a_gdf中的数据包解码为mat，并按照实验节点分割成(2*288*22*1125)的数据，其中2代表实验数据和分类标签两个维度；288是试验次数，22是电极个数，1125是采样点。将解码后的文件保存到/data/中
+   Biosig工具箱和BCI源文件均可根据论文提供的信息下载，关于biosig工具箱详细信息参见参考文献[15]
 2. /datasets/DataLoading.py：加载.mat文件中的数据
 3. /datasets/APaugmentation.py：对数据进行STFT并进行数据增强，再进行反STFT变换转换回numpy.array，保存到/processed_data/中用于实验
 4. /torch_stft：进行STFT变换与反变换的模块，采用pytorch框架，可进行gpu加速
 5. /CP-MixedNet.py：网络模型以及训练、检测用代码。
 
 对于HGD数据集：
-1. 数据集保存在/data_HGD
+1. 数据集保存在/data_HGD（文件太大不上传了，可以直接根据论文提供的信息自行下载）
 2. 数据读取模块/datasets/Dataloading_HGD.py
 3. 数据增强模块/datasets/APaugmentation_HGD.py
 
@@ -25,7 +26,7 @@ pytorch 1.2.0
 numpy 1.15.2
 scipy 0.18.1
 
-2019.11.25 补充说明：
+2019.11.25 补充：
 文件夹BCICIV_2a_gdf是原作者处理的数据
 文件夹data是经过处理的BCI数据
 文件夹data_HGD是HGD数据
