@@ -27,11 +27,11 @@ numpy 1.15.2
 scipy 0.18.1
 
 2019.11.25 补充：
-文件夹BCICIV_2a_gdf是原作者处理的数据
-文件夹data是经过处理的BCI数据
-文件夹data_HGD是HGD数据
-文件夹EGG_datatrans存放原始BCI数据和处理程序
-CP-MixedNet是优化之前的网络模型和主程序，初期复现验证数据和框架用的；
-CP-MixedNet_BCI是优化之后的网络模型和主程序，主要用于调参、修改模型和验证实验；
-CP-MixedNet_HGD是针对HGD修改的模型和主程序，由于数据不同，需要对读数据和模型输入做修改。
-主要实验结果来源于CP-MixedNet_BCI的代码调试和运行结果。
+* 文件夹BCICIV_2a_gdf是原作者处理的数据，需要解压到当前文件夹下
+* 文件夹data是经过处理的BCI数据
+* 文件夹data_HGD是HGD数据
+* 文件夹EGG_datatrans存放原始BCI数据和处理程序
+* CP-MixedNet是优化之前的网络模型和主程序，初期复现验证数据和框架用的；
+* CP-MixedNet_BCI是优化之后的网络模型和主程序，主要用于调参、修改模型和验证实验；
+* CP-MixedNet_HGD是针对HGD修改的模型和主程序，由于数据不同，需要对读数据和模型输入做修改。
+* 主要实验结果来源于CP-MixedNet_BCI的代码调试和运行结果。
